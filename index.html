@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOO CRYPTO TRADING</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #060E20;
+      color: #E2E8F0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 24px 40px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      background: linear-gradient(135deg, #4BE277, #2D9A52);
+      border-radius: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 32px rgba(75, 226, 119, 0.25);
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #4BE277;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: #7A8BA8;
+      max-width: 360px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #4BE277;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .feature-card {
+      background: #0F1B31;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 18px 16px;
+    }
+
+    .feature-icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .feature-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #E2E8F0;
+      margin-bottom: 4px;
+    }
+
+    .feature-desc {
+      font-size: 12px;
+      color: #7A8BA8;
+      line-height: 1.5;
+    }
+
+    .notice-box {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .notice-box p {
+      font-size: 13px;
+      color: #CBD5E1;
+      line-height: 1.7;
+    }
+
+    .notice-box p + p {
+      margin-top: 8px;
+    }
+
+    .contact-box {
+      background: #0F1B31;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      color: #7A8BA8;
+      margin-bottom: 12px;
+    }
+
+    .contact-box a {
+      color: #4BE277;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .privacy {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .privacy h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #E2E8F0;
+      margin-bottom: 16px;
+    }
+
+    .privacy p, .privacy li {
+      font-size: 13px;
+      color: #7A8BA8;
+      line-height: 1.8;
+    }
+
+    .privacy ul {
+      padding-left: 18px;
+      margin: 8px 0;
+    }
+
+    .privacy .block {
+      margin-bottom: 24px;
+    }
+
+    .privacy .block h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #CBD5E1;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: #3A4A60;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+
+    @media (max-width: 400px) {
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">₿</div>
+    <h1>JOO CRYPTO TRADING</h1>
+    <p class="subtitle">검증된 알고리즘 전략으로 24시간 자동 암호화폐 트레이딩</p>
+  </header>
+
+  <main>
+
+    <!-- Features -->
+    <div class="section">
+      <p class="section-title">주요 기능</p>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <div class="feature-title">자동매매</div>
+          <div class="feature-desc">전략 신호 기반 자동 진입·청산</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <div class="feature-title">실시간 모니터링</div>
+          <div class="feature-desc">잔고·포지션 실시간 확인</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <div class="feature-title">수익 분석</div>
+          <div class="feature-desc">거래 히스토리 및 차트 분석</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <div class="feature-title">보안</div>
+          <div class="feature-desc">AES-256 암호화 API 키 저장</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notice -->
+    <div class="section">
+      <p class="section-title">투자 유의사항</p>
+      <div class="notice-box">
+        <p>• 암호화폐 투자는 원금 손실의 위험이 있습니다.</p>
+        <p>• 과거 수익률이 미래 수익을 보장하지 않습니다.</p>
+        <p>• 모든 투자 결정과 그 결과에 대한 책임은 투자자 본인에게 있습니다.</p>
+        <p>• 출금 권한이 없는 API 키 사용을 강력히 권장합니다.</p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <p class="section-title">지원 및 문의</p>
+      <div class="contact-box">
+        <p>문의 사항이 있으시면 이메일로 연락해 주세요.</p>
+        <a href="mailto:support@zonequicknext.com">support@zonequicknext.com</a>
+      </div>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div class="privacy">
+      <h2>개인정보 처리방침</h2>
+      <p>JOO CRYPTO TRADING(이하 "앱")은 사용자의 개인정보를 소중히 여깁니다.</p>
+
+      <div class="block" style="margin-top:20px;">
+        <h3>수집하는 정보</h3>
+        <ul>
+          <li>이메일 주소 (회원가입 시)</li>
+          <li>거래소 API 키 및 시크릿 (AES-256 암호화 저장)</li>
+          <li>거래 내역 및 수익 데이터</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>정보 이용 목적</h3>
+        <ul>
+          <li>자동매매 서비스 제공</li>
+          <li>거래 내역 조회 및 분석</li>
+          <li>계정 인증 및 보안</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>제3자 제공</h3>
+        <p>사용자의 개인정보는 법령에 의한 경우를 제외하고 제3자에게 제공되지 않습니다.</p>
+      </div>
+
+      <div class="block">
+        <h3>보안</h3>
+        <p>API 키는 AES-256-GCM 방식으로 암호화되어 저장되며, 서버에서도 복호화된 키는 거래 실행 시에만 일시적으로 사용됩니다.</p>
+      </div>
+
+      <div class="block">
+        <h3>계정 삭제</h3>
+        <p>앱 내 프로필 → 회원 탈퇴를 통해 모든 데이터를 영구적으로 삭제할 수 있습니다.</p>
+      </div>
+
+      <div class="block">
+        <h3>문의</h3>
+        <p>개인정보 관련 문의: <a href="mailto:support@zonequicknext.com" style="color:#4BE277;">support@zonequicknext.com</a></p>
+      </div>
+
+      <p style="margin-top:16px; font-size:12px;">최종 수정일: 2026년 4월 23일</p>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 JOO CRYPTO TRADING. All rights reserved.
+  </footer>
+
+</body>
+</html>
