@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>온도습도측정기 · Thermo — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #EFE5D2;
+      --fg: #3A2616;
+      --faint: #7A6450;
+      --accent: #8A6E45;
+      --surface: #E8DAC0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: 0;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    h1 { font-size: 30px; letter-spacing: -0.4px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -0.2px; }
+    h3 { font-size: 16px; margin: 20px 0 8px; color: var(--accent); }
+    p, ul, table { margin: 10px 0; }
+    ul { padding-left: 22px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid var(--surface); padding: 8px 10px; text-align: left; }
+    th { background: var(--surface); }
+    .lang-switch {
+      display: inline-flex;
+      gap: 8px;
+      background: var(--surface);
+      border-radius: 999px;
+      padding: 4px;
+      margin: 0 0 24px;
+    }
+    .lang-switch a {
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: var(--faint);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .lang-switch a.active {
+      background: var(--bg);
+      color: var(--fg);
+    }
+    .meta { color: var(--faint); font-size: 13px; }
+    code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    a { color: var(--accent); }
+    section[hidden] { display: none; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="lang-switch">
+    <a href="#ko" class="active" data-lang="ko">한국어</a>
+    <a href="#en" data-lang="en">English</a>
+  </div>
+
+  <!-- KOREAN -->
+  <section id="section-ko">
+    <h1>개인정보 처리방침</h1>
+    <p class="meta">앱: 온도습도측정기 · 시행일 2026-05-15 · 최종 수정 2026-05-18 · 앱 식별자 <code>com.jooyoung.thermo</code></p>
+
+    <h2>1. 개요</h2>
+    <p>온도습도측정기(이하 "앱")는 사용자의 개인정보를 소중히 다룹니다. 이 문서는 앱이 어떤 정보를 어떻게 다루는지 쉬운 말로 설명합니다.</p>
+    <p>이 앱은 <strong>회원가입이 없으며, 사용자를 식별할 수 있는 정보를 수집하거나 서버에 저장하지 않습니다.</strong></p>
+
+    <h2>2. 수집·이용하는 정보</h2>
+
+    <h3>2.1 위치 정보 (위도·경도)</h3>
+    <ul>
+      <li><strong>이용 목적:</strong> 현재 위치의 날씨, 대기질 정보를 가져오기 위함</li>
+      <li><strong>이용 방식:</strong> 디바이스에서 위경도를 얻어 날씨 API에 전달하고, 응답만 받습니다. 위경도는 앱 서버에 저장되지 않으며, 사용자에 연결되는 식별자와 함께 전송되지 않습니다.</li>
+      <li><strong>보관:</strong> 사용자가 직접 "저장된 도시"로 추가한 경우에만 디바이스 내부에 저장됩니다.</li>
+    </ul>
+
+    <h3>2.2 디바이스 내 저장 설정</h3>
+    <p>다음 항목이 디바이스 내부(SharedPreferences)에만 저장됩니다. 외부로 전송되지 않습니다.</p>
+    <ul>
+      <li>저장한 도시 목록 (이름, 위도, 경도)</li>
+      <li>단위 설정 (섭씨/화씨, hPa/inHg)</li>
+      <li>테마 설정</li>
+      <li>알림 및 위젯 새로고침 설정</li>
+    </ul>
+
+    <h3>2.3 광고 표시를 위해 처리되는 정보 (Google AdMob)</h3>
+    <p>앱은 운영을 위해 Google AdMob 광고를 표시합니다. AdMob SDK가 광고를 송출하는 과정에서 다음 정보를 자동으로 처리할 수 있습니다.</p>
+    <table>
+      <tr><th>항목</th><th>용도</th></tr>
+      <tr><td>광고 식별자 (IDFA / AAID)</td><td>비개인화 광고 송출, 광고 빈도 제어, 어뷰징 방지</td></tr>
+      <tr><td>기기 정보 (기종, OS, 언어, 화면 크기)</td><td>광고 호환성</td></tr>
+      <tr><td>IP 주소 (대략적 지역만)</td><td>지역 기반 광고, 보안</td></tr>
+      <tr><td>광고 노출/클릭 이벤트</td><td>광고 성과 측정</td></tr>
+    </table>
+    <ul>
+      <li>광고 식별자는 iOS의 "App Tracking Transparency"와 Android의 "광고 ID 재설정/삭제" 설정으로 사용자가 직접 제어할 수 있습니다.</li>
+      <li>AdMob의 자체 개인정보 처리방침: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>사용자가 추적 동의를 거부한 경우 비개인화 광고만 표시합니다.</li>
+    </ul>
+
+    <h3>2.4 수집하지 않는 항목</h3>
+    <ul>
+      <li>이름, 이메일, 전화번호, 생년월일 등 개인 식별 정보</li>
+      <li>사용 분석(Firebase Analytics 등), 행동 추적 데이터</li>
+      <li>연락처, 사진, 캘린더, 마이크, 카메라</li>
+      <li>결제 정보, 디바이스 고정 식별자(UUID, IMEI 등)</li>
+    </ul>
+
+    <h2>3. 외부 서비스 (제3자 제공)</h2>
+    <p>모든 통신은 HTTPS로 암호화됩니다.</p>
+    <table>
+      <tr><th>서비스</th><th>용도</th><th>전송되는 정보</th></tr>
+      <tr><td>Open-Meteo Forecast API</td><td>날씨 예보</td><td>위도, 경도</td></tr>
+      <tr><td>Open-Meteo Air Quality API</td><td>미세먼지</td><td>위도, 경도</td></tr>
+      <tr><td>Open-Meteo Geocoding API</td><td>도시 검색</td><td>도시명 검색어</td></tr>
+      <tr><td>Google AdMob</td><td>광고 표시</td><td>광고 식별자, 기기 정보, IP (2.3)</td></tr>
+    </table>
+
+    <h2>4. 권한 사용</h2>
+    <table>
+      <tr><th>권한</th><th>용도</th><th>거부 시</th></tr>
+      <tr><td>위치 (사용 중)</td><td>현재 위치 기반 날씨</td><td>도시를 직접 검색해 사용 가능</td></tr>
+      <tr><td>알림</td><td>강수·미세먼지·불쾌지수 알림</td><td>알림 미발송, 앱 내 정보는 사용 가능</td></tr>
+      <tr><td>백그라운드 업데이트</td><td>알림 조건 검사용 주기적 갱신</td><td>알림 정확도 저하</td></tr>
+    </table>
+
+    <h2>5. 데이터 보관 및 파기</h2>
+    <ul>
+      <li>모든 설정과 저장된 도시 목록은 사용자의 디바이스 내에만 보관됩니다.</li>
+      <li>앱을 삭제하면 모든 데이터가 즉시 함께 삭제됩니다.</li>
+      <li>광고 ID는 OS 설정에서 직접 재설정/삭제할 수 있습니다.</li>
+    </ul>
+
+    <h2>6. 아동의 개인정보</h2>
+    <p>앱은 만 4세 이상이면 누구나 사용할 수 있으며, 아동을 별도로 식별하거나 아동 대상으로 데이터를 수집하지 않습니다.</p>
+
+    <h2>7. 이용자의 권리</h2>
+    <p>이용자는 디바이스 설정에서 언제든지 위치 권한·알림 권한·광고 추적을 회수할 수 있으며, 앱 내 "저장된 도시"를 직접 삭제할 수 있습니다.</p>
+
+    <h2>8. 안전 조치</h2>
+    <ul>
+      <li>모든 외부 통신은 HTTPS(TLS)로 암호화됩니다.</li>
+      <li>사용자를 식별할 수 있는 정보를 자체 서버로 전송하지 않습니다.</li>
+    </ul>
+
+    <h2>9. 변경 안내</h2>
+    <p>처리방침이 변경될 경우 본 페이지의 시행일·최종 수정일을 갱신합니다.</p>
+
+    <h2>10. 연락처</h2>
+    <p>개발자: 개인 개발자 · 이메일: <a href="mailto:wndud2274@gmail.com">wndud2274@gmail.com</a></p>
+  </section>
+
+  <!-- ENGLISH -->
+  <section id="section-en" hidden>
+    <h1>Privacy Policy</h1>
+    <p class="meta">App: Thermo · Effective 2026-05-15 · Updated 2026-05-18 · ID <code>com.jooyoung.thermo</code></p>
+
+    <h2>1. Overview</h2>
+    <p>Thermo ("the app") respects your privacy. The app <strong>does not require an account and does not collect or store any information that can identify you on a server.</strong></p>
+
+    <h2>2. Information We Use</h2>
+    <h3>2.1 Location (latitude / longitude)</h3>
+    <p>Used to fetch weather and air-quality data for your current location. Coordinates are transmitted to the weather API only, are not stored on any server we operate, and are never sent together with any identifier. Coordinates persist on-device only if you explicitly add a city to "Saved Locations".</p>
+
+    <h3>2.2 On-device settings</h3>
+    <p>Saved cities, unit preferences, theme, alert and widget refresh preferences are stored locally only.</p>
+
+    <h3>2.3 Advertising (Google AdMob)</h3>
+    <p>The AdMob SDK may automatically process: advertising identifier (IDFA/AAID), device info (model, OS, language, screen size), IP-based approximate region, and ad impression/click events. Users can control the advertising identifier via iOS "App Tracking Transparency" or Android "Reset advertising ID". If tracking is declined, only non-personalised ads are shown. AdMob's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+    <h3>2.4 We do NOT collect</h3>
+    <ul>
+      <li>Name, email, phone, DOB or any personal identifiers</li>
+      <li>Analytics or custom behavioural tracking</li>
+      <li>Contacts, photos, calendar, microphone, camera</li>
+      <li>Payment information or persistent device identifiers</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>All traffic uses HTTPS.</p>
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Data sent</th></tr>
+      <tr><td>Open-Meteo Forecast</td><td>Weather forecast</td><td>lat, lon</td></tr>
+      <tr><td>Open-Meteo Air Quality</td><td>Air quality</td><td>lat, lon</td></tr>
+      <tr><td>Open-Meteo Geocoding</td><td>City search</td><td>search query</td></tr>
+      <tr><td>Google AdMob</td><td>In-app ads</td><td>advertising id, device info, IP (§2.3)</td></tr>
+    </table>
+
+    <h2>4. Permissions</h2>
+    <table>
+      <tr><th>Permission</th><th>Purpose</th><th>If denied</th></tr>
+      <tr><td>Location (When in Use)</td><td>Weather for current location</td><td>You can add cities manually</td></tr>
+      <tr><td>Notifications</td><td>Alerts for precipitation, PM2.5, comfort index ≥ 80</td><td>No alerts; in-app data still works</td></tr>
+      <tr><td>Background app refresh</td><td>Periodic weather check for alert evaluation</td><td>Alerts may be less timely</td></tr>
+    </table>
+
+    <h2>5. Retention and Deletion</h2>
+    <p>All settings and saved cities are kept only on your device. Uninstalling the app deletes all of its data immediately. The advertising identifier can be reset or deleted in OS settings.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>The app is suitable for ages 4+ and does not knowingly collect data from children.</p>
+
+    <h2>7. User Rights</h2>
+    <p>You can revoke location, notification, and ad-tracking permissions at any time in OS settings. You can delete saved cities in-app.</p>
+
+    <h2>8. Legal Basis (GDPR Art. 6)</h2>
+    <p>Processing of location is necessary for performance of the service requested by the user (Art. 6(1)(b)). Processing of advertising data is based on legitimate interest and, where applicable, user consent.</p>
+
+    <h2>9. Changes</h2>
+    <p>If we change this policy we will update the Effective / Updated dates above.</p>
+
+    <h2>10. Contact</h2>
+    <p>Developer: independent developer · Email: <a href="mailto:wndud2274@gmail.com">wndud2274@gmail.com</a></p>
+  </section>
+</main>
+
+<script>
+  const ko = document.getElementById('section-ko');
+  const en = document.getElementById('section-en');
+  const links = document.querySelectorAll('.lang-switch a');
+  function set(lang) {
+    if (lang === 'en') {
+      ko.hidden = true; en.hidden = false;
+      links.forEach(a => a.classList.toggle('active', a.dataset.lang === 'en'));
+      document.documentElement.lang = 'en';
+    } else {
+      ko.hidden = false; en.hidden = true;
+      links.forEach(a => a.classList.toggle('active', a.dataset.lang === 'ko'));
+      document.documentElement.lang = 'ko';
+    }
+  }
+  if (location.hash === '#en') set('en');
+  links.forEach(a => a.addEventListener('click', e => set(a.dataset.lang)));
+</script>
+</body>
+</html>
