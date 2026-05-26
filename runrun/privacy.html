@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RunRun 개인정보처리방침</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.7;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #111317; }
+      a { color: #8fd14f; }
+      .meta { color: #9aa0a6; }
+      hr { border-color: #2a2d33; }
+    }
+    h1 { font-size: 1.7rem; margin-bottom: 4px; }
+    h2 { font-size: 1.2rem; margin-top: 36px; border-bottom: 2px solid #d4ff3f; display: inline-block; padding-bottom: 2px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 24px; }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+    th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
+    @media (prefers-color-scheme: dark) { th, td { border-color: #2a2d33; } th { background: #1a1d22; } }
+    th { background: #f5f5f5; }
+    code { background: rgba(127,127,127,0.15); padding: 1px 5px; border-radius: 4px; }
+    hr { margin: 40px 0; border: none; border-top: 1px solid #e0e0e0; }
+    .footer { font-size: 0.85rem; color: #888; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <h1>RunRun 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 5월 26일 · 최종 수정: 2026년 5월 26일</p>
+
+  <p>
+    RunRun(이하 "본 앱")은 이용자의 개인정보를 소중하게 생각합니다. 본 앱은
+    <strong>별도의 서버 없이 동작하는 로컬 우선(local-first) 앱</strong>으로,
+    러닝 기록·사진 등 이용자의 데이터는 원칙적으로 <strong>이용자의 기기 내부에만 저장</strong>되며
+    본 앱 운영자에게 전송되거나 수집되지 않습니다. 본 방침은 본 앱이 어떤 정보를
+    어떻게 다루는지를 설명합니다.
+  </p>
+
+  <h2>1. 수집·이용하는 정보</h2>
+  <p>본 앱은 회원가입이나 로그인이 없으며, 이름·이메일·전화번호 등 이용자를 식별하는 개인정보를 수집하지 않습니다. 기능 제공을 위해 다음 정보가 <strong>기기 내부에서</strong> 생성·저장됩니다.</p>
+  <table>
+    <tr><th>정보</th><th>목적</th><th>저장 위치</th></tr>
+    <tr><td>위치 정보(GPS 경로·거리·페이스)</td><td>러닝 경로 기록 및 통계 표시</td><td>기기 내부(앱 데이터베이스)</td></tr>
+    <tr><td>카메라로 촬영한 사진(AR 기록 사진)</td><td>러닝 기록 사진 생성·보관·공유</td><td>기기 내부</td></tr>
+    <tr><td>러닝 통계·목표·신체정보(체중 등 이용자가 입력한 값)</td><td>칼로리·목표 진행률 계산</td><td>기기 내부</td></tr>
+  </table>
+  <p>위 정보는 본 앱 운영자의 서버로 전송되지 않으며, 이용자 기기에만 남아 있습니다.</p>
+
+  <h2>2. 기기 권한 사용</h2>
+  <ul>
+    <li><strong>위치(사용 중 및 백그라운드)</strong> — 러닝 경로를 기록하기 위해 사용합니다. 화면을 끄거나 앱이 백그라운드에 있을 때도 정확한 경로 기록을 위해 위치를 수집할 수 있습니다.</li>
+    <li><strong>카메라</strong> — AR 기록 사진을 촬영하기 위해 사용합니다.</li>
+    <li><strong>사진/미디어</strong> — 촬영한 기록 사진을 저장하기 위해 사용합니다.</li>
+    <li><strong>알림</strong> — 러닝 진행 상태 등 알림(잠금화면 라이브 액티비티 포함)을 표시하기 위해 사용합니다.</li>
+  </ul>
+  <p>모든 권한은 이용자가 기기 설정에서 언제든지 철회할 수 있습니다. 권한을 거부해도 해당 기능을 제외한 앱 이용은 가능합니다.</p>
+
+  <h2>3. 제3자 서비스로의 정보 전송</h2>
+  <p>본 앱은 일부 기능을 위해 다음의 외부 서비스를 호출하며, 이 과정에서 <strong>이용자의 대략적 위치(좌표)</strong>가 해당 서비스에 전달될 수 있습니다. 본 앱 운영자는 이 정보를 수집·보관하지 않습니다.</p>
+  <table>
+    <tr><th>서비스</th><th>전달 정보</th><th>목적</th></tr>
+    <tr><td>Open-Meteo (날씨·대기질 API)</td><td>현재 위치 좌표</td><td>현재 날씨·대기질 정보 조회</td></tr>
+    <tr><td>지도 타일 제공자(CARTO, 데이터 © OpenStreetMap)</td><td>지도에 표시되는 지역의 타일 요청</td><td>러닝 경로 지도 표시</td></tr>
+  </table>
+  <p>각 서비스의 개인정보 처리에 대해서는 해당 서비스의 정책을 참고하시기 바랍니다.</p>
+  <ul>
+    <li>Open-Meteo: <a href="https://open-meteo.com/en/terms">https://open-meteo.com/en/terms</a></li>
+    <li>CARTO: <a href="https://carto.com/privacy">https://carto.com/privacy</a></li>
+    <li>OpenStreetMap: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
+  </ul>
+  <p>참고: 앱 내 "주변 러너 수"는 실제 타인의 위치 데이터가 아니라 시간대 기반으로 산출된 추정 표시값이며, 이를 위해 어떠한 개인정보도 수집·전송하지 않습니다.</p>
+
+  <h2>4. 광고 및 분석</h2>
+  <p>본 앱은 광고를 게재하지 않으며, 제3자 분석·추적 도구(예: 광고 식별자 기반 트래킹)를 사용하지 않습니다.</p>
+
+  <h2>5. 데이터 보관 및 삭제</h2>
+  <p>모든 데이터는 이용자 기기에 저장되며, 본 앱 운영자는 이를 보관하지 않습니다. 이용자는 다음 방법으로 데이터를 삭제할 수 있습니다.</p>
+  <ul>
+    <li>앱 내에서 개별 러닝 기록·사진 삭제</li>
+    <li>앱을 삭제(제거)하면 기기에 저장된 본 앱의 모든 데이터가 함께 삭제됩니다.</li>
+  </ul>
+
+  <h2>6. 정보의 제3자 제공·판매</h2>
+  <p>본 앱은 이용자의 개인정보를 제3자에게 판매하거나 마케팅 목적으로 제공하지 않습니다. (제3절에 명시된 기능 제공 목적의 외부 서비스 호출은 제외)</p>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>본 앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+  <h2>8. 보안</h2>
+  <p>데이터가 기기 내부에 저장되므로, 기기 자체의 잠금(암호·생체인증) 등 운영체제의 보안 기능이 적용됩니다. 이용자는 기기 보안을 안전하게 유지할 책임이 있습니다.</p>
+
+  <h2>9. 본 방침의 변경</h2>
+  <p>본 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다. 중요한 변경의 경우 시행일을 갱신합니다.</p>
+
+  <h2>10. 문의처</h2>
+  <p>개인정보 처리에 관한 문의는 아래로 연락해 주세요.</p>
+  <ul>
+    <li>앱 이름: RunRun</li>
+    <li>이메일: <a href="mailto:wndud2274@gmail.com">wndud2274@gmail.com</a></li>
+  </ul>
+
+  <hr />
+  <p class="footer">© 2026 RunRun. 이 방침은 본 앱의 데이터 처리 방식을 설명하기 위한 것으로, 실제 운영 방식과 일치하도록 유지됩니다.</p>
+</body>
+</html>
