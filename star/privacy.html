@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>개인정보처리방침 · 저 별 뭐야? (What's That Star?)</title>
+<style>
+  :root{
+    --bg:#080c16; --bg2:#0d1426; --panel:#121a2c; --line:rgba(255,255,255,.10);
+    --sky:#8ed4e8; --sky-bright:#bdeaf5; --text:#e8eef6; --muted:#9fb0c6;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo",sans-serif;
+    color:var(--text); line-height:1.75; -webkit-font-smoothing:antialiased;
+    background:radial-gradient(120% 60% at 50% 0%, #16233f 0%, var(--bg2) 42%, var(--bg) 100%);
+    min-height:100vh;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 22px 96px;}
+  header{margin-bottom:36px;}
+  .brand{display:flex; align-items:center; gap:12px; margin-bottom:18px;}
+  .brand .dot{width:26px; height:26px; border-radius:50%;
+    background:radial-gradient(circle at 38% 32%, #fff, var(--sky-bright) 55%, #6fc6e0);
+    box-shadow:0 0 18px rgba(142,212,232,.6);}
+  .brand b{font-size:17px; font-weight:600; letter-spacing:.02em;}
+  h1{font-size:30px; line-height:1.3; margin:0 0 10px; font-weight:700;}
+  .meta{color:var(--muted); font-size:14px;}
+  .meta a{color:var(--sky-bright); text-decoration:none;}
+  .toggle{display:inline-flex; gap:6px; margin:26px 0 8px; background:var(--panel);
+    border:1px solid var(--line); border-radius:999px; padding:4px;}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--muted);
+    font:inherit; font-size:14px; font-weight:500; padding:7px 16px; border-radius:999px; cursor:pointer;}
+  .toggle button.active{background:var(--sky); color:#08151f;}
+  section.lang{display:none;}
+  section.lang.active{display:block;}
+  h2{font-size:19px; margin:34px 0 8px; font-weight:600; color:#fff;}
+  h2 .n{color:var(--sky); font-weight:700; margin-right:8px;}
+  p{margin:8px 0; color:var(--text);}
+  ul{margin:8px 0; padding-left:20px;}
+  li{margin:6px 0;}
+  a{color:var(--sky-bright); word-break:break-all;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:14px 0;}
+  hr{border:0; border-top:1px solid var(--line); margin:40px 0;}
+  footer{color:var(--muted); font-size:13px; margin-top:48px; text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="dot"></span><b>저 별 뭐야? · What's That Star?</b></div>
+    <h1>개인정보처리방침<br><span style="font-size:20px;color:var(--muted);font-weight:500;">Privacy Policy</span></h1>
+    <div class="meta">
+      시행일 / Effective: 2026-06-08 ·
+      앱 / App: com.joo.star.star ·
+      문의 / Contact: <a href="mailto:wndud2274@gmail.com">wndud2274@gmail.com</a>
+    </div>
+    <div class="toggle" role="tablist">
+      <button id="btn-ko" class="active" onclick="setLang('ko')">한국어</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- 한국어 -->
+  <section class="lang active" id="ko">
+    <h2><span class="n">1</span>개요</h2>
+    <p>"저 별 뭐야?"(이하 "앱")는 현재 위치와 시각을 기준으로 밤하늘의 별·별자리를 보여주는 앱입니다. 본 방침은 앱이 어떤 정보를 다루는지 설명합니다. 개발자는 별도의 서버나 회원 계정을 운영하지 않으며, 이용자 정보를 직접 수집·저장하지 않습니다.</p>
+
+    <h2><span class="n">2</span>수집·이용하는 정보</h2>
+    <ul>
+      <li><b>위치 정보(GPS, 대략/정밀)</b> — 현재 하늘의 별자리 위치를 계산하기 위해 사용하며, <b>기기 내에서만</b> 사용되고 개발자 서버로 전송·저장되지 않습니다.</li>
+      <li><b>카메라</b> — 카메라 모드에서 실시간 미리보기 위에 별자리를 겹쳐 보여주기 위해 사용합니다. 촬영 이미지는 개발자가 수집하지 않으며, 이용자가 직접 "공유"를 선택할 때만 기기의 공유 기능으로 전달됩니다.</li>
+      <li><b>광고 식별자 및 기기·이용 데이터</b> — 앱은 Google AdMob을 통해 광고를 표시합니다. AdMob은 광고 제공·측정을 위해 광고 식별자(IDFA/AAID), 기기 정보, 대략적 위치, 앱 이용 데이터 등을 수집·이용할 수 있으며 Google의 정책을 따릅니다.</li>
+    </ul>
+
+    <h2><span class="n">3</span>제3자 서비스</h2>
+    <div class="card">
+      <p><b>Google AdMob (광고)</b></p>
+      <p>· <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a><br>
+         · <a href="https://policies.google.com/technologies/partner-sites">Google의 데이터 이용 안내</a></p>
+    </div>
+
+    <h2><span class="n">4</span>동의 (광고 개인화 · 추적)</h2>
+    <ul>
+      <li><b>iOS</b> — Apple 앱 추적 투명성(ATT)에 따라 추적 허용 여부를 요청합니다. 허용하지 않으면 비개인화 광고가 제공되며 앱 기능은 그대로 이용할 수 있습니다.</li>
+      <li><b>EEA/영국 등</b> — Google UMP 동의 양식을 통해 광고 개인화 동의를 받습니다.</li>
+    </ul>
+
+    <h2><span class="n">5</span>아동의 개인정보</h2>
+    <p>본 앱은 만 13세 미만(또는 거주 지역 기준 연령) 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+    <h2><span class="n">6</span>데이터 보관</h2>
+    <p>개발자는 이용자 개인정보를 수집·보관하지 않습니다. 위치·카메라 데이터는 기기에서만 일시적으로 사용됩니다. AdMob이 수집한 데이터의 보관은 Google 정책을 따릅니다.</p>
+
+    <h2><span class="n">7</span>이용자 권리·선택</h2>
+    <ul>
+      <li>기기 설정에서 앱의 위치·카메라 권한을 언제든지 해제할 수 있습니다(위치 권한이 없으면 정확도가 낮아질 수 있습니다).</li>
+      <li>기기 설정에서 광고 식별자를 재설정하거나 맞춤 광고를 제한할 수 있습니다.<br>
+        · iOS: 설정 &gt; 개인정보 보호 및 보안 &gt; 추적<br>
+        · Android: 설정 &gt; Google &gt; 광고</li>
+    </ul>
+
+    <h2><span class="n">8</span>변경</h2>
+    <p>본 방침은 변경될 수 있으며, 변경 시 시행일을 갱신해 본 페이지에 게시합니다.</p>
+
+    <h2><span class="n">9</span>문의</h2>
+    <p>개인정보 관련 문의: <a href="mailto:wndud2274@gmail.com">wndud2274@gmail.com</a></p>
+  </section>
+
+  <!-- English -->
+  <section class="lang" id="en">
+    <h2><span class="n">1</span>Overview</h2>
+    <p>"What's That Star?" (the "App") shows stars and constellations in the night sky based on your current location and time. This policy explains what information the App handles. The developer does not operate servers or user accounts and does not directly collect or store your personal information.</p>
+
+    <h2><span class="n">2</span>Information Used</h2>
+    <ul>
+      <li><b>Location (GPS, approximate/precise)</b> — used to compute the positions of constellations in your current sky. Location is used <b>on your device only</b> and is not transmitted to or stored on developer servers.</li>
+      <li><b>Camera</b> — used in camera mode to overlay constellations on the live preview. Captured images are not collected by the developer and leave your device only if you choose to "Share" them via your device's sharing feature.</li>
+      <li><b>Advertising identifiers and device/usage data</b> — the App shows ads via Google AdMob. AdMob may collect and use advertising identifiers (IDFA/AAID), device information, coarse location, and app-usage data to serve and measure ads, subject to Google's policies.</li>
+    </ul>
+
+    <h2><span class="n">3</span>Third-Party Services</h2>
+    <div class="card">
+      <p><b>Google AdMob (advertising)</b></p>
+      <p>· <a href="https://policies.google.com/privacy">Google Privacy Policy</a><br>
+         · <a href="https://policies.google.com/technologies/partner-sites">How Google uses information</a></p>
+    </div>
+
+    <h2><span class="n">4</span>Consent (Personalized Ads · Tracking)</h2>
+    <ul>
+      <li><b>iOS</b> — the App requests tracking permission via Apple's App Tracking Transparency (ATT). If you decline, non-personalized ads are shown and all features remain available.</li>
+      <li><b>EEA/UK, etc.</b> — consent for personalized ads is gathered via Google's UMP consent form.</li>
+    </ul>
+
+    <h2><span class="n">5</span>Children's Privacy</h2>
+    <p>The App is not primarily directed to children under 13 (or the age defined by your region), and does not knowingly collect personal information from children.</p>
+
+    <h2><span class="n">6</span>Data Retention</h2>
+    <p>The developer does not collect or retain your personal information. Location and camera data are used only transiently on the device. Retention of data collected by AdMob is governed by Google's policies.</p>
+
+    <h2><span class="n">7</span>Your Choices</h2>
+    <ul>
+      <li>You can revoke the App's location or camera permission in device settings at any time (accuracy may decrease without location).</li>
+      <li>You can reset your advertising identifier or limit ad personalization in device settings:<br>
+        · iOS: Settings &gt; Privacy &amp; Security &gt; Tracking<br>
+        · Android: Settings &gt; Google &gt; Ads</li>
+    </ul>
+
+    <h2><span class="n">8</span>Changes</h2>
+    <p>This policy may be updated; changes will be posted here with a revised effective date.</p>
+
+    <h2><span class="n">9</span>Contact</h2>
+    <p>Privacy inquiries: <a href="mailto:wndud2274@gmail.com">wndud2274@gmail.com</a></p>
+  </section>
+
+  <hr>
+  <footer>© 2026 저 별 뭐야? (What's That Star?) · com.joo.star.star</footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.getElementById('ko').classList.toggle('active', l==='ko');
+    document.getElementById('en').classList.toggle('active', l==='en');
+    document.getElementById('btn-ko').classList.toggle('active', l==='ko');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.documentElement.lang = l;
+  }
+</script>
+</body>
+</html>
